@@ -25,10 +25,12 @@ FROM ubuntu:20.04
     RUN mkdir -p /var/www/html
     COPY jgonalb/* /var/www/html
     RUN mkdir -p /etc/letsencrypt/live/path
-#   Copiar certificados
+# Copiar certificados
     COPY certificados/* /etc/letsencrypt/live/path
     COPY TuSitio.conf /etc/apache2/sites-available/
     COPY security2.conf /etc/apache2/mods-available/
+# Copiar evasive.conf
+    COPY evasive.conf /etc/apache2/sites-available/
 
 # Clonar repositorio de OWASP CRS
     RUN git clone https://github.com/SpiderLabs/owasp-modsecurity-crs.git /tmp/owasp-modsecurity-crs && \
