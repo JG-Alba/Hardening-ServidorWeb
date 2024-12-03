@@ -8,11 +8,11 @@ El *hardening* es el proceso de asegurar un sistema, servidor o aplicación medi
 
 La creación de una imagen Docker securizada implica la instalación y configuración de Apache con medidas de seguridad adecuadas. Aquí está el `Dockerfile` detallado que hemos utilizado:
 
-[Dockerfile](./Dockerfile)
+[Dockerfile](./files/Dockerfile)
 
 También dejo un archivo de ejemplo para el servidor web
 
-[TuSitio.conf](./TuSitio.conf)
+[TuSitio.conf](./files/TuSitio.conf)
 
 
 ### **Resumen de la configuración del Dockerfile**:
@@ -64,7 +64,7 @@ El módulo **`mod_evasive`** de Apache se usa para proteger el servidor contra a
 
 Dejo el archivo configurado tambien.
 
-[evasive.conf](./evasive.conf)
+[evasive.conf](./files/evasive.conf)
 
 ### **Pruebas de `mod_evasive`**:
 1. **Prueba de carga con Apache Bench (ab)**:
