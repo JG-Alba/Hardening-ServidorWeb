@@ -64,7 +64,7 @@ El módulo **`mod_evasive`** de Apache se usa para proteger el servidor contra a
 
 Dejo el archivo configurado tambien.
 
-[evadive.conf](./evasive.conf)
+[evasive.conf](./evasive.conf)
 
 ### **Pruebas de `mod_evasive`**:
 1. **Prueba de carga con Apache Bench (ab)**:
