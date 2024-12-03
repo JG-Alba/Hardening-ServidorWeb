@@ -10,6 +10,9 @@ FROM ubuntu:20.04
         ln -fs /usr/share/zoneinfo/Europe/Madrid /etc/localtime && \
         dpkg-reconfigure --frontend noninteractive tzdata
 
+# La configuración anterior es para maquinas ubuntu, si tienes una debian u
+# Tendras que comprobar que configuración sera necesaria para configurar la zona horaria.
+
 # Instalar Apache2
     RUN apt-get install -y apache2 libapache2-mod-security2 libapache2-mod-evasive git apache2-utils && \
         rm -rf /var/lib/apt/lists/*
@@ -23,7 +26,7 @@ FROM ubuntu:20.04
 
 # Crear un directorio para el sitio web y establecer un archivo index básico
     RUN mkdir -p /var/www/html
-    COPY jgonalb/* /var/www/html
+    COPY tusitio/* /var/www/html
     RUN mkdir -p /etc/letsencrypt/live/path
 # Copiar certificados
     COPY certificados/* /etc/letsencrypt/live/path

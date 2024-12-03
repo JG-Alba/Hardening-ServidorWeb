@@ -8,6 +8,8 @@ El *hardening* es el proceso de asegurar un sistema, servidor o aplicación medi
 
 La creación de una imagen Docker securizada implica la instalación y configuración de Apache con medidas de seguridad adecuadas. Aquí está el `Dockerfile` detallado que hemos utilizado:
 
+A tener en cuenta, la maquina que usaremos es una Ubuntu, pero puedes usar otra a tu elección cambiando los archivos necesarios y rutas.
+
 [Dockerfile](./files/Dockerfile)
 
 También dejo un archivo de ejemplo para el servidor web
